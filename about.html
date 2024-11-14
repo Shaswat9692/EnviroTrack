@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('./assets/images/team_logo.jpg') no-repeat center center/cover;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            position: relative;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-container {
+            text-align: center;
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #ff6600;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Team Section */
+        .team-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+            color: white;
+            width: 80%;
+        }
+
+        .team-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .team-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .team-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .team-card .email {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .team-card p {
+            font-size: 1rem;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .team-card {
+                flex-direction: column;
+            }
+
+            .team-card img {
+                margin: 0 0 15px 0;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="about-container">
+            <h1>About Us</h1>
+            <p>Welcome to Stardust Innovators, a dynamic team of explorers, engineers, scientists, and visionaries united by a shared passion for space, technology, and innovation. Our journey began with the simple idea that the future is something we create, not just something we wait for. That belief drives everything we do. At Stardust Innovators, we push boundaries, embrace new technologies, and tackle the challenges of tomorrow with creativity and collaboration.</p><br>
+
+
+            <p>We specialize in leveraging cutting-edge technologies such as artificial intelligence, robotics, data science, and sustainable engineering solutions. With each project, we aim to blend technical expertise with visionary thinking, always striving to develop impactful solutions that benefit both our planet and our universe.</p>
+        </p>
+        <br><br>
+        <h2>Our story:</h2><br>
+            <p>The seed of Stardust Innovators was planted when a group of like-minded individuals came together to explore the possibilities of space technology and advanced innovation. What started as curiosity grew into a passion for transforming ideas into tangible solutions. From our first project to where we are now, we've consistently pursued excellence, learning from every challenge and success along the way. Today, we are a multidisciplinary team contributing to space exploration, robotics, AI-driven solutions, and more.
+            </p><br>
+            <br><br>
+            <h2>Our mission:</h2><br>
+                <p>The seed of Stardust Innovators was planted when a group of like-minded individuals came together to explore the possibilities of space technology and advanced innovation. What started as curiosity grew into a passion for transforming ideas into tangible solutions. From our first project to where we are now, we've consistently pursued excellence, learning from every challenge and success along the way. Today, we are a multidisciplinary team contributing to space exploration, robotics, AI-driven solutions, and more.</p><br>
+
+
+
+
+
+
+            <button id="learnMoreBtn">Learn More</button>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <div class="team-card">
+                <img src="./assets/images/MONISH BACKGROUND.jpg" alt="Monish.R">
+                <div>
+                    <h3>Monish.R</h3>
+                    <p class="email">monishr608@gmail.com</p>
+                    <p>B.E in CSE-Artificial Intelligence</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assets/images/Shaswat MISHA NASA.jpg" alt="Shaswat Mishra">
+                <div>
+                    <h3>Shaswat Mishra</h3>
+                    <p class="email">shaswatmishra5533@gmail.com</p>
+                    <p><p>B.E in CSE-Artificial Intelligence</p></p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assets/images/junaid.jpg" alt="Mohammed Junaid">
+                <div>
+                    <h3>Mohammed Junaid</h3>
+                    <p class="email">Mdjunaid59946@gmail.com</p>
+                    <p><p>B.E in CSE-Artificial Intelligence</p></p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assets/images/prashanth.jpg" alt="Prashanth A N">
+                <div>
+                    <h3>Prashanth A N</h3>
+                    <p class="email">prashanth3792@gmail.com</p>
+                    <p><p>B.E in Information Science & Engineering</p></p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assets/images/Mourya.jpg" alt="Mourya">
+                <div>
+                    <h3>Mourya</h3>
+                    <p class="email">mouryachittibabu@gmail.com</p>
+                    <p>B.E in Information Science & Engineering</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assets/images/shadab.jpg" alt="Mohammed Shadab Saleem">
+                <div>
+                    <h3>Mohammed Shadab Saleem</h3>
+                    <p class="email">shadabsaleem207@gmail.com</p>
+                    <p>B.E in Information Science & Engineering</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function() {
+            alert('Thanks for your interest! More content is coming soon.');
+        });
+    </script>
+</body>
+</html>
