@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnvitoTrack</title>
+    <title>Check Your Location - EnvitoTrack</title>
+    <!-- Link to main styles -->
     <link rel="stylesheet" href="styles.css">
-    <!-- React and ReactDOM (Updated to React 18) -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <!-- Optional: If you need Babel for JSX, keep this script -->
-    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
-    <!-- Main script for your React code -->
-    <script src="location-app.js" defer></script>
+    <!-- React and Babel for JSX -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,14 +24,18 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Welcome to EnvitoTrack</h1>
-        <p>Your gateway to environmental tracking and awareness.</p>
-        <!-- This is where your React app will be injected -->
-        <div id="root"></div>
+        <h1>Check Your Location</h1>
+        <!-- Root div for React components -->
+        <div id="location-root"></div>
     </main>
+
     <footer>
         <p>&copy; 2024 EnvitoTrack. All rights reserved.</p>
     </footer>
+
+    <!-- React App Script -->
+    <script type="text/babel" src="location-app.js"></script>
 </body>
 </html>
